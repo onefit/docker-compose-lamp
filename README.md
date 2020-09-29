@@ -28,20 +28,20 @@ As of now, we have several different PHP versions. Use appropriate php version a
  
 * Clone this repository on your local computer
 * configure .env as needed 
-* Run the `docker-compose up -d`.
+* Run the `make up`.
 
 ```shell
 git clone https://github.com/sprintcube/docker-compose-lamp.git
 cd docker-compose-lamp/
 cp sample.env .env
 // modify sample.env as needed
-docker-compose up -d
+make up
 // visit localhost
 ```
 
-Your LAMP stack is now ready!! You can access it via `http://localhost`.
+Your LAMP stack is now ready!! You can access it via [http://localhost](http://localhost).
 
-## Makefile
+### Makefile help
 
 ```
 docker-compose-lamp $ make
@@ -132,7 +132,7 @@ By default following modules are enabled.
 You can connect to web server using `docker-compose exec` command to perform various operation on it. Use below command to login to container via ssh.
 
 ```shell
-docker-compose exec webserver bash
+make bash
 ```
 
 ## PHP
