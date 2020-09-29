@@ -41,6 +41,24 @@ docker-compose up -d
 
 Your LAMP stack is now ready!! You can access it via `http://localhost`.
 
+## Makefile
+
+```
+docker-compose-lamp $ make
+target                         help
+------                         ----
+help                           Show this help
+clean                          Stop all running docker containers (recommended to run before 'start' command)
+start                          Create and start containers, composer dependencies etc. - everything in one command
+up                             Create and start containers
+down                           Stop and remove containers, networks, images, and volumes
+reload                         Restart containers
+build                          Build or re-build containers
+composer-install               Composer install
+composer-update                Composer update
+bash                           SSH webserver container (run bash)
+```
+
 ##  Configuration and Usage
 
 ### General Information 
