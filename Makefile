@@ -23,7 +23,7 @@ clean: ## Stop all running docker containers (recommended to run before 'start' 
 	docker ps -q | xargs docker stop
 
 start: ## Create and start containers, composer dependencies etc. - everything in one command
-	if [ ! -e ".env" ]; then cp .env.sample .env; fi
+	if [ ! -e ".env" ]; then cp sample.env .env; fi
 	make up
 	make composer-install
 
