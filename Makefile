@@ -47,3 +47,10 @@ composer-update: ## Composer update
 
 bash: ## SSH webserver container (run bash)
 	docker-compose exec webserver bash
+
+test: ## Run all unit tests or given test file
+	@docker-compose exec webserver ./vendor/bin/phpunit $(call args)
+
+test-filter: ## Run unit tests of given class or test method
+	@docker-compose exec webserver ./vendor/bin/phpunit --filter $(call args)
+
