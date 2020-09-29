@@ -1,5 +1,7 @@
 #  LAMP stack built with Docker Compose
 
+Can be used as a base for PHP projects. Simply replace `www` folder with your project files.
+
   
 
 ![Landing Page](https://preview.ibb.co/gOTa0y/LAMP_STACK.png)
@@ -57,6 +59,8 @@ build                          Build or re-build containers
 composer-install               Composer install
 composer-update                Composer update
 bash                           SSH webserver container (run bash)
+test                           Run all unit tests or given test file
+test-filter                    Run unit tests of given class or test method
 ```
 
 ##  Configuration and Usage
